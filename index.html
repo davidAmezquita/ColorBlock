@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ColorBlock</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+
+    <h1>ColorBlock</h1>
+
+    <p style="padding-bottom: 5px;">
+        <b>Instructions:</b> Game starts with multiple blocks of different colors.
+        Your job is to get all the blocks to be the same color before you run out of moves.
+        In order to do that, you must click on a block that is adjecent to blocks chained together.
+        Chained blocks are those who are adjecent to eachother and have the same color. The top left
+        most block is root to the chain so any block adjecent to it can be chained.
+    </p>
+
+    <div class="game-Settings">Difficulty->
+        <b id="diff-setting">Easy</b>
+        <label id="diff-label" for="difficulty">Choose difficulty:</label>
+        <select id="difficulty">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+    </div>
+
+    <div class="centered">
+        <div id="board">
+        </div>
+    </div>
+
+    <div class="lower-display">
+        <button type="button" id="startButton">Start Game</button>
+        <p class="move-text">Number of Moves: 
+            <span id="numMoves" style="color: red;">0</span>
+        </p>
+    </div>
+</body>
+
+<script src='main.js'></script>
+</html>
