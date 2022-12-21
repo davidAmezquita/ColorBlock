@@ -11,7 +11,6 @@ let unvisited;
 //sets up the size of each block in the grid
 function setupGrid(difficulty) {
     let grid = document.getElementById("board");
-    console.log('Hello');
 
     if (difficulty === 1) {
         //default grid, simply return
